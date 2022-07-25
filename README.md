@@ -1,4 +1,4 @@
-Created following the https://docs.djangoproject.com/en/4.0/intro/tutorial01/
+https://docs.djangoproject.com/en/4.0/intro/tutorial01/
 
 Just for the record, the dir \polls-original-APP includes the whole polls APP and the dir \polls-as-pacakage includes the files that should be installed with pip install.
 It is an example of using Django-apps as pacakages. 
