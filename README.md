@@ -5,6 +5,8 @@ It is an example of using Django-apps as pacakages.
 
 The SECRET_KEY should be defined in the file .env.example and then renamed to .env
 
+The poll-App includes also Django unity test cases. 
+
 =====
 Polls
 =====
