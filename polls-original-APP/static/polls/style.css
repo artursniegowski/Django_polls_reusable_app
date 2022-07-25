@@ -1,0 +1,13 @@
+/* refer in Django by polls/style.css */
+ul li {
+    color: green;
+}
+fieldset label {
+    color: green;
+}
+body {
+    background-image: url('images/background.gif');
+    background-position-x: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,29 @@
+{% extends "polls/base.html" %}
+
+
+{% block content_main %}
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend><h1>{{ question.question_text }}</h1></legend>
+            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+            {% for choice in question.choice_set.all %}
+                <input type="radio" name="choice" id="choice{{ foorloop.counter }}" value="{{ choice.id }}">
+                <label for="choice{{ foorloop.counter }}">{{ choice.choice_text }}</label>
+                <br>
+            {% endfor %}
+        </fieldset>
+        <input type="submit" value="Vote">
+    </form>
+    <!-- <div class="container-fluid justify-content-center">
+        <div class="card text-bg-secondary m-auto text-center" style="max-width: 18rem;">
+            <h5 class="card-header">{{ question.question_text }}</h5>
+            <div class="card-header">It was published on {{ question.pub_date }}</div> 
+            <div class="card-body">
+                {% for  choice in question.choice_set.all  %}
+                    <h5 class="card-title">{{ choice.choice_text }}</h5>
+                {% endfor %}
+            </div>
+        </div>
+    </div> -->
+{% endblock %}
