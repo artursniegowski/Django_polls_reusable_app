@@ -36,3 +36,22 @@ Quick start
    to create a poll (you'll need the Admin app enabled).
 
 5. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+
+---
+
+**Examples of views from the Polls website:**</br>
+
+---
+
+***The home page with the polls question.***</br>
+![Screenshot](docs/img/01_main.PNG)</br>
+
+---
+
+***Question / Vote view in the polls.***</br>
+![Screenshot](docs/img/02_vote_for_a_question.PNG)</br>
+
+---
+
+***Results view after voting.***</br>
+![Screenshot](docs/img/03_vote_results.PNG)</br>
